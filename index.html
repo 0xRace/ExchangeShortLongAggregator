@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Long/Short Aggregator</title>
+    <meta name="description" content="Long/Short Aggregator" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script src="./jquery-1.12.4.js"></script>
+    <script src="./nodescript.js"></script>
+    <script>
+        $(function () {
+            $("#b1").html("Percent Short/Long: 45");
+            $("#t1").on('click', function () {
+                $("#pageContent").slideToggle(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <header>
+        <div id="logo">
+            <img src="./logo.png">&nbsp;Market Short/Long Aggregator
+        </div>
+        <nav>
+            <ul>
+                <!--
+                  manifest.json provides metadata used when your web app is installed on a
+                  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+                                <li><a href="https://html5-templates.com/">Templates</a></li>
+                                <li><a href="https://html-css-js.com/">HTML</a></li>
+                                <li><a href="https://html-css-js.com/css/">CSS</a></li>
+                                <li><a href="https://htmlcheatsheet.com/js/">JS</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+    <div id="root"></div>
+
+    <section>
+        <strong>Main Section Header</strong>
+        <button id="t1">Slide</button>
+    </section>
+
+    <section id="pageContent" class="maybe">
+        <main role="main">
+            <article>
+                <h2>Total Header</h2>
+                <p>Article</p>
+            </article>
+            <article>
+                <h2>Binance Header</h2>
+                <p id="b1">Percent Short/Long: 45</p>
+            </article>
+            <article>
+                <h2>FTX Header</h2>
+                <p>Article</p>
+            </article>
+            <article>
+                <h2>OkEx Header</h2>
+                <p>Article</p>
+            </article>
+        </main>
+        <aside>
+            <div>Sidebar 1</div>
+            <div>Sidebar 2</div>
+            <div>Sidebar 3</div>
+        </aside>
+    </section>
+
+    <footer>
+        <p>
+            <a href="https://html5-templates.com/" target="_blank" rel="nofollow"></a>
+        </p>
+        <address>Contact: <a href="race.saunders@gmail.com">Mail me</a></address>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
