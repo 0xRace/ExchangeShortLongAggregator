@@ -26,16 +26,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <script src="./jquery-1.12.4.js"></script>
-    <script src="./nodescript.js"></script>
-    <script>
+
+    <script id="jquery">
         $(function () {
-            $("#b1").html("Percent Short/Long: 45");
+            $("#pageContent").slideToggle();
+            $("#pageContent2").slideToggle();
+
             $("#t1").on('click', function () {
                 $("#pageContent").slideToggle(1000);
             });
-        });
+            $("#t2").on('click', function () {
+                $("#pageContent2").slideToggle(1000);
+                $("#b1").html("update");
+            });
+        })();
     </script>
+
 </head>
+
 <body>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -47,8 +55,6 @@
         <nav>
             <ul>
                 <!--
-                  manifest.json provides metadata used when your web app is installed on a
-                  user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
                                 <li><a href="https://html5-templates.com/">Templates</a></li>
                                 <li><a href="https://html-css-js.com/">HTML</a></li>
                                 <li><a href="https://html-css-js.com/css/">CSS</a></li>
@@ -58,18 +64,33 @@
         </nav>
     </header>
 
-    <div id="root"></div>
-
     <section>
-        <strong>Main Section Header</strong>
-        <button id="t1">Slide</button>
+        <strong>Transaction Decoder</strong>
+        <button id="t1">Reveal</button>
     </section>
 
     <section id="pageContent" class="maybe">
         <main role="main">
+            <div id="root"></div>
+
+        </main>
+    </section>
+
+    <section>
+        <div id="root2"></div>
+    </section>
+
+    <section id="button2">
+        <strong>Market Bias Visualizer</strong>
+        <button id="t2">Reveal</button>
+    </section>
+
+    <section id="pageContent2" class="maybe">
+        <main role="main">
             <article>
                 <h2>Total Header</h2>
-                <p>Article</p>
+                <pre id="log"></pre>
+                <p id="x">Article</p>
             </article>
             <article>
                 <h2>Binance Header</h2>
@@ -84,11 +105,14 @@
                 <p>Article</p>
             </article>
         </main>
-        <aside>
-            <div>Sidebar 1</div>
-            <div>Sidebar 2</div>
-            <div>Sidebar 3</div>
-        </aside>
+        <!--
+         <aside>
+                <div>Sidebar 1</div>
+                <div>Sidebar 2</div>
+                <div>Sidebar 3</div>
+            </aside>
+        -->
+
     </section>
 
     <footer>

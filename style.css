@@ -193,13 +193,16 @@ nav ul {
   list-style: none;
 }
 #pageContent {
-  max-width: 1000px;
-  margin: auto;
-  border: none;
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+    display: block;
+    width: 700px;
+    height: 200px;
 }
 main {
   float: left;
-  width: 60%;
+  width: 100%;
 }
 aside {
   float: right;
